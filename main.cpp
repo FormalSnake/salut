@@ -163,7 +163,7 @@ int main() {
   //	You can add more in the `execlp` down bellow.
   vector<tuple<string, string, string, string>> options = {
       make_tuple("Neovim", " ", "nv", "nvim"),
-      make_tuple("Fastfetch", " ", "ft", "fastfetch"),
+      make_tuple("Fastfetch", " ", "ft", "fastfetch"),
       make_tuple("Zsh", "$ ", "zs", "zsh"),
       make_tuple("Btop", " ", "bp", "btop"),
   };
@@ -193,6 +193,8 @@ int main() {
 	  os_icon = colorize(" ", BLUE);
   } else if (id == "nixos") {
 	  os_icon = colorize(" ", BLUE);
+  } else if (id == "macos") {
+    os_icon = colorize(" ", WHITE);
   } else {
 	  os_icon = colorize(" ", YELLOW);
   }
